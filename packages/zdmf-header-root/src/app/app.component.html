@@ -1,7 +1,10 @@
-<nav>
-  <ul>
-    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Consumer 1</a></li>
-    <li><a routerLink="/consumer2" routerLinkActive="active">Consumer 2</a></li>
-  </ul>
+<header>
+  <data id="version" name="version" [value]="version">{{ version }}</data>
+  <nav>
+    <ul>
+      <li><a href="/" [class.active]="pathIs('/')">Consumer 1</a></li>
+      <li><a href="/consumer2" [class.active]="pathStartsWith('/consumer2')">Consumer 2</a></li>
+    </ul>
+  </nav>
   <router-outlet></router-outlet>
-</nav>
+</header>

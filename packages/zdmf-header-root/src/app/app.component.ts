@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-declare const VERSION: string;
+import { Router } from '@angular/router';
+import { version } from '../../package.json';
 
 @Component({
   selector: 'zdmf-header-root',
@@ -8,5 +8,17 @@ declare const VERSION: string;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Version: ' + VERSION;
+  version: string;
+
+  constructor(private router: Router) {
+    this.version = version;
+  }
+
+  pathIs(path: string) {
+    return this.router.url == path;
+  }
+
+  pathStartsWith(path: string) {
+    return this.router.url.startsWith(path);
+  }
 }
