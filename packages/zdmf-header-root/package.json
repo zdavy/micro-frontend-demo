@@ -1,5 +1,5 @@
 {
-  "name": "header",
+  "name": "zdmf-header-root",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,9 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublish": "ng build --single-bundle --prod --extra-webpack-config src/webpack.partial.js --output-hashing none"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.1.3",
     "@angular/common": "~9.1.3",
@@ -29,8 +30,13 @@
     "@angular/compiler-cli": "~9.1.3",
     "@angular/language-service": "~9.1.3",
     "@types/node": "^12.11.1",
+    "ngx-build-plus": "^9.0.6",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
-  }
+  },
+  "main": "dist/header/main-es5.js",
+  "files": [
+    "dist"
+  ]
 }
