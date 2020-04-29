@@ -105,6 +105,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "consumer-two"
+    }
+  },
+  "defaultProject": "consumer-two",
+  "cli": {
+    "analytics": false
+  }
 }
