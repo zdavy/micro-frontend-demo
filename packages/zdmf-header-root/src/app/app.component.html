@@ -2,8 +2,8 @@
   <data id="version" name="version" [value]="version">{{ version }}</data>
   <nav>
     <ul>
-      <li><a href="/" [class.active]="pathIs('/')">Consumer 1</a></li>
-      <li><a href="/consumer2" [class.active]="pathStartsWith('/consumer2')">Consumer 2</a></li>
+      <li><a [href]="urls.home" [class.active]="pathIs('/')">Consumer 1</a></li>
+      <li><a [href]="urls.consumer2" [class.active]="pathStartsWith('/consumer2')">Consumer 2</a></li>
     </ul>
   </nav>
   <router-outlet></router-outlet>

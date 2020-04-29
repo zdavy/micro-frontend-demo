@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { version } from '../../package.json';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'zdmf-header-root',
@@ -9,9 +10,11 @@ import { version } from '../../package.json';
 })
 export class AppComponent {
   version: string;
+  urls: { [key: string]: string };
 
   constructor(private router: Router) {
     this.version = version;
+    this.urls = environment.urls;
   }
 
   pathIs(path: string) {
