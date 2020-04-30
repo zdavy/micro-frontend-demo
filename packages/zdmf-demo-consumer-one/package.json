@@ -1,5 +1,5 @@
 {
-  "name": "consumer-two",
+  "name": "zdmf-demo-consumer-one",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
