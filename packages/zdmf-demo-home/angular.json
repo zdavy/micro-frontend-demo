@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "consumer-one": {
+    "zdmf-demo-home": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/consumer-one",
+            "outputPath": "dist/zdmf-demo-home",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -90,24 +90,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "consumer-one:build"
+            "browserTarget": "zdmf-demo-home:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "consumer-one:build:production"
+              "browserTarget": "zdmf-demo-home:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "consumer-one:build"
+            "browserTarget": "zdmf-demo-home:build"
           }
         }
       }
     }
   },
-  "defaultProject": "consumer-one",
+  "defaultProject": "zdmf-demo-home",
   "cli": {
     "analytics": false
   }
