@@ -35,7 +35,7 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "main": "dist/header/main-es5.js",
+  "main": "dist/zdmf-header-root/main-es5.js",
   "files": [
     "dist"
   ]

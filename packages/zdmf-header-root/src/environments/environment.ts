@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   urls: {
     home: '/',
-    consumer2: '/consumer2'
+    consumer1: '/consumer1'
   }
 };
 
