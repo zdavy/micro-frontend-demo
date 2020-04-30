@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { version } from '../../package.json';
 import { environment } from '../environments/environment';
 
@@ -12,16 +11,16 @@ export class AppComponent {
   version: string;
   urls: { [key: string]: string };
 
-  constructor(private router: Router) {
+  constructor() {
     this.version = version;
     this.urls = environment.urls;
   }
 
   pathIs(path: string) {
-    return this.router.url == path;
+    return location.pathname == path;
   }
 
   pathStartsWith(path: string) {
-    return this.router.url.startsWith(path);
+    return location.pathname.startsWith(path);
   }
 }
