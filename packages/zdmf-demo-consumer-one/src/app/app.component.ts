@@ -2,7 +2,7 @@ import { Component, HostBinding } from '@angular/core';
 import { version } from '../../package.json';
 
 @Component({
-  selector: 'app-root',
+  selector: 'zdmf-demo-consumer-one',
   template: `
     <router-outlet></router-outlet>
   `,
