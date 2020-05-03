@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { version } from '../../package.json';
 import { environment } from '../environments/environment';
 
@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  version: string;
+  @HostBinding('attr.version') version: string;
   urls: { [key: string]: string };
 
   constructor() {
