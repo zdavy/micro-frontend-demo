@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "deploy:home": "git subtree push --prefix packages/zdmf-demo-home zdmf-demo-home master",
-    "deploy:consumer1": "git subtree push --prefix packages/zdmf-demo-consumer-one zdmf-demo-consumer-one master"
+    "deploy:consumer1": "git subtree push --prefix packages/zdmf-demo-consumer-one zdmf-demo-consumer-one master",
+    "publish:header": "cd packages/zdmf-header-root && npm publish"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
