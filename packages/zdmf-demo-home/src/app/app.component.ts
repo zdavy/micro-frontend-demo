@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
+import { version } from '../../package.json';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
+  @HostBinding('attr.version') version: string;
+
+  constructor() {
+    this.version = version;
+  }
 }
