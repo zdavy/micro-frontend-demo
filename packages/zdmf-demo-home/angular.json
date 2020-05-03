@@ -36,7 +36,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "zdmf-demo-home",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
