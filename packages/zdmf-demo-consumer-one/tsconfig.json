@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "resolveJsonModule": true,
     "baseUrl": "./consumer1",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
